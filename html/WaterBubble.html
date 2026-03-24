@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WaterBubble</title>
+  <link rel="stylesheet" href="../css/general.css">
+  <link rel="stylesheet" href="../css/right-section.css">
+  <link rel="stylesheet" href="../css/left-section.css">
+</head>
+<body>
+  <div class="game-container">
+          <div class="left-section"> 
+              <div class="game-area"> 
+                <div class="start">
+                  <button id="start-bubbling">Click Here To Start Bubbling 🫧⋆｡˚</button>
+                </div>
+                   <div class="game-begin-message" id="gameBegin">
+                      <p class="message-text">Get Ready to Bubble !</p>
+                      <p class="countdown-number" id="countdown"></p>
+                    </div>
+                    <div class="game-control">
+                    <div class="game-header">
+                    <div class="timer">
+                      <img class="timer-icon" src="../icons/chronometre (1).png" alt="icon">
+                      <p class="remaining-time"></p>
+                    </div>
+                    <div class="remaining-souls">
+                      <img  class="soul-1" src="../pictures/pearl2.png" alt="soul">
+                      <img  class="soul-2" src="../pictures/pearl2.png" alt="soul">
+                      <img  class="soul-3" src="../pictures/pearl2.png" alt="soul">
+                    </div>
+                    <div class="son">
+                      <audio id="myAudio" autoplay loop>
+                        <source src="../audio/waterbubbleson.mp3" type="audio/mpeg"> 
+                      </audio>
+                      <img class="son-icon" src="../icons/monter-le-son.png" alt="volume on">
+                      <img class="son-coupe-icon" src="../icons/volume-coupe.png" alt="volume off">
+                    </div>
+                  </div>
+                  <div class="game-container">
+                    <div class="fish">
+                      <img class="fish-4" src="../pictures/fish4.png" alt="fish">
+                      <img class="fish-1" src="../pictures/fish1.png" alt="fish">
+                      <img class="fish-2" src="../pictures/fish2.png" alt="fish">
+                      <img class="fish-3" src="../pictures/fish3.png" alt="fish">
+                      <img class="fish-2" src="../pictures/fish2.png" alt="fish">
+                      <img class="fish-1" src="../pictures/fish1.png" alt="fish">
+                      <img class="fish-4" src="../pictures/fish4.png" alt="fish">
+                      <img class="fish-5" src="../pictures/fish5.png" alt="fish">
+                    </div>
+                    <div>
+                      <img class="boom" src="../pictures/boom2.png" alt="boom">
+                    </div>
+                  </div>
+
+                </div>
+                <div class="winner">
+                  <p>Congratulations , You pop <span id="resultat"></span> bubble !</p>
+                  <p>Do you wanna Play Again ? </p>
+                  <div class="yes/no-buttons">
+                    <button class="start-button"> Yes</button>
+                    <button class="no-button">No</button>
+                  </div>
+                </div>
+                 <div class="loser">
+                  <p>Game Over , You lose!</p>
+                  <p>Do you wanna Play Again ? </p>
+                  <div class="yes/no-buttons">
+                    <button class="start-button"> Yes</button>
+                    <button class="no-button">No</button>
+                  </div>
+                 </div>
+              </div>
+      </div>
+
+    <hr class="separator-page">
+    <div class="right-section">
+      <div class="intro">
+        <h3>Let's pop, Chayma !</h3>
+      </div>
+      <div class="score-card">
+        <div class="score-card-level">
+          <p style="font-size: 18px;">Level</p>
+          <div class="score-level">
+            <img style="width:32px;" src="../icons/gagnant.png" alt="icon">
+            <strong class="level-value">1</strong>
+          </div>
+        </div>
+        <hr class="separator-score-card">
+        <div lass="score-card-points">
+           <p style="text-align: center;font-size: 18px;">Score</p>
+          <div class="score-points">
+            <img style="width:32px;" src="../icons/trophee.png" alt="icon">
+            <strong class="score-value">0</strong>
+          </div>
+        </div>
+      </div>
+  <div class="levels">
+        <p> Choose a level</p>
+  </div>
+    <div class="options-level-buttons">
+          <div class="top-level-buttons">
+            <div class="easy-level-button">
+              <span>Easy</span>
+              <img src="../icons/etoile.png" alt="icon">
+            </div>
+            <div class="medium-level-button">
+              <span>Medium</span>
+              <img src="../icons/etoile.png" alt="icon">
+              <img src="../icons/etoile.png" alt="icon">
+            </div>
+          </div>
+          <div class="hard-level-wrapper">
+            <div class="hard-level-button">
+              <span>Hard</span>
+              <img src="../icons/etoile.png" alt="icon">
+              <img src="../icons/etoile.png" alt="icon">
+              <img src="../icons/etoile.png" alt="icon">
+            </div>
+          </div>
+    </div>
+  <div class="control-buttons">
+      <button class="pause-button">
+        <img src="../icons/pause.png" alt="Pause Icon">
+        <span>Pause</span>
+        </button>
+        <button class="play-button">
+        <strong class="gradient-text">▶</strong>
+        <span>Play</span>
+      </button>
+      <button class="start-button" id="restart-button">
+        <img src="../icons/repeter (1).png" alt="Restart Icon">
+        <span>Restart</span>
+      </button>
+  </div>
+    </div>
+  </div>
+ <script src="../javaScript/game.js"></script>
+</body>
+</html>

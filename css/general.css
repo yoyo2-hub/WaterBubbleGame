@@ -1,0 +1,29 @@
+body {
+    margin: 0;
+    background: linear-gradient(to bottom, purple 10%, black 20%);
+    color: white;
+}
+p,h1,h2,h3,h4,h5,h6{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.game-container{
+  display:flex;
+  flex-direction: row;
+}
+.left-section {
+  width: 85%;
+  height: 95vh;
+  margin: 20px;
+}
+.right-section{
+  width: 25%;
+  height: 90vh;
+  margin: 20px;
+}
+.right-section:hover{
+  cursor: pointer;
+}
+.separator-page{
+  border-color: rgb(186, 181, 181);
+}
+
